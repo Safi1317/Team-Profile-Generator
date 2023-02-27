@@ -50,7 +50,9 @@ module.exports = (team) => {
     <div class="card-body">
         <ul class="list-group">
             <li class="list-group-item">ID: ${employee.id}</li>
-            <li class="list-group-item">Email:${employee.email}</li>
+            <li class="list-group-item">Email: <a href="mailto:${
+              employee.email
+            }">${employee.email}</a></li>
             <li class="list-group-item">Office number: ${
               employee.officeNumber
             }</li>
@@ -67,8 +69,10 @@ module.exports = (team) => {
     <div class="card-body">
         <ul class="list-group">
             <li class="list-group-item">ID: ${employee.id}</li>
-            <li class="list-group-item">Email:${employee.email}</li>
-            <li class="list-group-item">GitHub:${employee.getGithub()}</li>
+            <li class="list-group-item">Email: <a href="mailto:${
+              employee.email
+            }">${employee.email}</a></li>
+            <li class="list-group-item">GitHub: <a href="https://www.github.com/${employee.getGithub()}" target="_blank">www.github.com/${employee.getGithub()}</a></li>
         </ul>
     </div>
 </div>  `;
@@ -84,9 +88,9 @@ module.exports = (team) => {
                                 <li class="list-group-item">ID: ${
                                   employee.id
                                 }</li>
-                                <li class="list-group-item">Email: ${
+                                <li class="list-group-item">Email: <a href="mailto:${
                                   employee.email
-                                }</li>
+                                }">${employee.email}</a></li>
                                 <li class="list-group-item">School: ${employee.getSchool()}</li>
                             </ul>
                         </div>
