@@ -2,7 +2,7 @@ const Engineer = require("../lib/Engineer.js");
 describe("Testing role.", () => {
   it("Testing role.", () => {
     const role = "Engineer";
-    const employeeInstance = new Employee(
+    const employeeInstance = new Engineer(
       "Safia",
       5,
       "ali.swaphiyah@gmail.com"

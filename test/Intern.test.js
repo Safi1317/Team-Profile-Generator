@@ -2,7 +2,7 @@ const Intern = require("../lib/Intern");
 describe("Testing role.", () => {
   it("Testing role.", () => {
     const role = "Intern";
-    const interntest = new Employee("Safia", 5, "ali.swaphiyah@gmail.com");
+    const interntest = new Intern("Safia", 5, "ali.swaphiyah@gmail.com");
     expect(interntest.getRole()).toBe(role);
   });
 });
