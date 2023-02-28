@@ -1,25 +1,36 @@
-const Employee = require("./lib/Employee");
-
-test("testing name", () => {
-  const name = "Safia";
-  const employeeInstance = new Employee(name);
-  expect(employeeInstance.name).toBe(name);
+const Employee = require("../lib/Employee.js");
+describe("testing name", () => {
+  it("testing name", () => {
+    const name = "Safia";
+    const employeeInstance = new Employee(name);
+    expect(employeeInstance.name).toBe(name);
+  });
 });
 
-test("testing id", () => {
-  const newId = 5;
-  const employeeInstance = new Employee("Safia", newId);
-  expect(employeeInstance.id).toBe(newId);
+describe("testing id", () => {
+  it("testing id", () => {
+    const newId = 5;
+    const employeeInstance = new Employee("Safia", newId);
+    expect(employeeInstance.id).toBe(newId);
+  });
 });
 
-test("Testing email", () => {
-  const email = "ali.swaphiyah@gmail.com";
-  const employeeInstance = new Employee("Safia", email);
-  expect(employeeInstance.email).toBe(email);
+describe("testing email", () => {
+  it("Testing email", () => {
+    const email = "ali.swaphiyah@gmail.com";
+    const employeeInstance = new Employee("Safia", email);
+    expect(employeeInstance.email).toBe(email);
+  });
 });
 
-test("Testing role.", () => {
-  const role = "Employee";
-  const employeeInstance = new Employee("Safia", 5, "ali.swaphiyah@gmail.com");
-  expect(employeeInstance.getRole()).toBe(role);
+describe("Testing role.", () => {
+  test("Testing role.", () => {
+    const role = "Employee";
+    const employeeInstance = new Employee(
+      "Safia",
+      5,
+      "ali.swaphiyah@gmail.com"
+    );
+    expect(employeeInstance.getRole()).toBe(role);
+  });
 });

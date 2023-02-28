@@ -1,16 +1,21 @@
-const Intern = require("./lib/Intern.js");
-test("Testing role.", () => {
-  const role = "Intern";
-  const employeeInstance = new Employee("Safia", 5, "ali.swaphiyah@gmail.com");
-  expect(employeeInstance.getRole()).toBe(role);
+const Intern = require("../lib/Intern");
+describe("Testing role.", () => {
+  it("Testing role.", () => {
+    const role = "Intern";
+    const interntest = new Employee("Safia", 5, "ali.swaphiyah@gmail.com");
+    expect(interntest.getRole()).toBe(role);
+  });
 });
-test("Testing school.", () => {
-  const newSchool = "University of Minnesota";
-  const employeeInstance = new Intern(
-    "Safia",
-    5,
-    "ali.swaphiyah@gmail.com",
-    newSchool
-  );
-  expect(employeeInstance.school).toBe(newSchool);
+
+describe("Testing school", () => {
+  it("Testing school.", () => {
+    const newSchool = "University of Minnesota";
+    const employeeInstance = new Intern(
+      "Safia",
+      5,
+      "ali.swaphiyah@gmail.com",
+      newSchool
+    );
+    expect(employeeInstance.school).toBe(newSchool);
+  });
 });
