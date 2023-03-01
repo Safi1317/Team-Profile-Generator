@@ -4,7 +4,7 @@
 
 In this project i buiLt a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
 
-https://safi1317.github.io/Team-Profile-Generator/
+https://drive.google.com/file/d/1kD3OgS_L0OeHAYggUbTjYNWOZ2ULOol9/view
 
 # Screenshot
 
