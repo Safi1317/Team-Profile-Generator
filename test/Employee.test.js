@@ -18,7 +18,7 @@ describe("testing id", () => {
 describe("testing email", () => {
   it("Testing email", () => {
     const email = "ali.swaphiyah@gmail.com";
-    const employeeInstance = new Employee("Safia", email);
+    const employeeInstance = new Employee("Safia", 5, email);
     expect(employeeInstance.email).toBe(email);
   });
 });
